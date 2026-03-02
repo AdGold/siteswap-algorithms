@@ -11,7 +11,7 @@
     "sourceMap": true,
     "noImplicitReturns": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmitOnError": false,
+    "noEmitOnError": true,
     "lib": ["ES2019"],
   },
   "include": ["src/**/*.ts"],
