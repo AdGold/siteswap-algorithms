@@ -13,11 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "noEmitOnError": false,
     "lib": ["ES2019"],
-    "baseUrl": ".",
-    "paths": {
-      "universal-siteswap": ["../universal-siteswap/src/index.ts"]
-    }
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
