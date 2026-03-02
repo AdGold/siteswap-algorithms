@@ -1,0 +1,48 @@
+{
+  "name": "siteswap-algorithms",
+  "version": "0.1.0",
+  "description": "Siteswap generators (vanilla, sync, N-handed, passing) and anagram finder",
+  "main": "lib/index.js",
+  "module": "lib/esm/index.js",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/esm/index.js"
+    }
+  },
+  "files": ["lib/**/*", "src/**/*.ts"],
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.esm.json",
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register tests/**/*.test.ts",
+    "clean": "rm -rf lib"
+  },
+  "dependencies": {
+    "universal-siteswap": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "siteswap",
+    "juggling",
+    "generator",
+    "anagram"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdGold/siteswap-algorithms.git"
+  },
+  "author": {
+    "name": "Adrian Goldwaser",
+    "url": "https://diagonalrewards.com/juggling"
+  },
+  "license": "MIT"
+}

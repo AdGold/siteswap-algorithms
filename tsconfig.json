@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "declarationDir": "./lib/types",
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": false,
+    "lib": ["ES2019"],
+    "baseUrl": ".",
+    "paths": {
+      "universal-siteswap": ["../universal-siteswap/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules"]
+}
